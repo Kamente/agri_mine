@@ -1,0 +1,277 @@
+.descr {
+    color: black;
+    font-size: 20px;
+}
+
+.custom-nav {
+    display: grid;
+    grid-template-columns: 1fr auto;
+    background-color: rgb(10, 168, 10);
+    align-items: center;
+    width: 100%;
+}
+
+li {
+    list-style: none;
+    text-decoration: none;
+    font-size: 30px;
+}
+
+.custom-image {
+    width: 140px;
+    height: 140px;
+}
+
+.custom-im-text {
+    font-size: 20px;
+}
+
+.search-section {
+    display: flex;
+    gap: 50px;
+    margin: auto;
+}
+
+.custom-input {
+    width: 250px;
+    height: 30px;
+    font-size: 16px;
+    border-radius: 10px;
+}
+
+.custom-search {
+    width: 70px;
+    height: 38px;
+    font-size: 16px;
+    border-radius: 10px;
+}
+
+.custom-search:hover {
+    background-color: green;
+    cursor: pointer;
+}
+
+.content1 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.content2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 5px;
+    margin: auto 300px auto;
+}
+
+.list2 {
+    display: flex;
+    gap: 50px;
+}
+
+.list2 li {
+    margin-right: 20px;
+}
+
+.login {
+    margin-left: auto;
+    padding: 12px;
+    border-radius: 10px;
+}
+
+.cards-section {
+    display: grid;
+    justify-content: space-between;
+}
+
+.card {
+    border: 2px solid #ccc;
+    border-radius: 20px;
+    margin: 20px;
+    width: 1000px;
+    text-align: center;
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+}
+
+.read-more {
+    background-color: rgb(10, 168, 10);
+    color: white;
+    border-radius: 7px;
+    margin-bottom: 2px;
+    cursor: pagination;
+}
+
+.body-section {
+    display: flex;
+}
+
+.radio-grid {
+    display: grid;
+    gap: 10px;
+}
+
+.radio-grid label {
+    display: flex;
+    align-items: center;
+}
+
+.pagination {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.pagination button {
+    padding: 5px 10px;
+    background-color: #007BFF;
+    color: #fff;
+    border: none;
+    margin: 0 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.pagination button.active {
+    background-color: #0056b3;
+}
+
+.pagination button:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+}
+
+.socials a {
+    padding: 30px;
+}
+
+.footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    border-top: 2px solid #ccc;
+    background-color: #ebe6e6;
+}
+
+.back-img {
+    margin: 20px 0 0 100px;
+}
+
+/* AddBlogOptions.css */
+
+.add-blog-content {
+    background-color: white;
+    width: 80%;
+    max-width: 500px;
+    height: auto;
+    padding: 20px;
+    border-radius: 10px;
+    border: 2px solid #50504f;
+    position: absolute;
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.add-blog-content h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #50504f;
+}
+
+.add-blog-content label {
+    font-size: 16px;
+    color: #50504f;
+}
+
+.add-blog-content input[type="text"],
+.add-blog-content input[type="text"],
+.add-blog-content textarea,
+.add-blog-content select {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+/* .add-blog-content select {
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    background: transparent url("your-select-arrow-icon.png") no-repeat right center;
+} */
+
+.add-blog-content button {
+    width: 100%;
+    padding: 10px;
+    margin-top: 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: #0aa80a;
+    color: white;
+    cursor: pointer;
+    font-size: 18px;
+}
+
+.add-blog-content button:hover {
+    background-color: #088c08;
+}
+
+/* .overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(172, 171, 171, 0.5);
+    z-index: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+} */
+
+.overlay.active {
+    display: flex;
+}
+
+.overlay {
+    display: none;
+    position: fixed;
+    top: 10%;
+    left: 10%;
+    width: 80%;
+    height: 80%;
+    background-color: rgba(61, 60, 60, 0.5);
+    z-index: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.overlay.active {
+    display: flex;
+}
+
+.add-blog-content {
+    /* background: white; */
+    width: 80%;
+    max-width: 500px;
+    height: auto;
+    padding: 20px;
+    border-radius: 10px;
+    border: 2px solid rgb(80, 79, 79);
+    position: absolute;
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
